@@ -5,4 +5,5 @@ WORKDIR /var/www/bookstack
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
 
-ENTRY
+ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD
